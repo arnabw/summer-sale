@@ -41,7 +41,93 @@
         />
       </div>
     </header>
+    <main
+      class="flex flex-col-reverse lg:flex-row w-full bg-[#F8F8F8] px-4 md:px-24 lg:px-60 py-4 md:py-8 lg:py-14"
+    >
+      <!-- Card Section -->
+      <div class="flex flex-col space-y-4">
+        <h2
+          class="text-[#111111] text-4xl font-semibold text-center lg:text-left"
+        >
+          Kitchenware
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <!-- Kitchenware Card 1 -->
+          <div
+            class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 text-center space-y-2"
+          >
+            <div
+              class="bg-gray-400 px-6 py-4 rounded-lg max-w-80 max-h-48 flex justify-center"
+            >
+              <img
+                class="object-cover"
+                src="./images/kitchenware/spon.png"
+                alt=""
+              />
+            </div>
+            <h5 class="text-xl font-semibold text-[#111111]">K. Accessories</h5>
+            <p class="font-normal text-[#11111180] text-xl">39.00 $</p>
+            <button
+              id="cartBtn"
+              type="button"
+              class="text-white bg-gradient-to-r from-pink-500 to-pink-600 hover:shadow-lg hover:shadow-pink-500/50 hover:bg-gradient-to-br focus:outline-none font-medium rounded-lg text-base px-4 py-2 text-center"
+            >
+              Add To Cart
+            </button>
+          </div>
+          <!-- Kitchenware Card 2 -->
+          <div
+            class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 text-center space-y-2"
+          >
+            <div
+              class="bg-gray-400 px-6 py-4 rounded-lg max-w-80 max-h-48 flex justify-center"
+            >
+              <img
+                class="object-cover"
+                src="./images/kitchenware/chopping-boat.png"
+                alt=""
+              />
+            </div>
+            <h5 class="text-xl font-semibold text-[#111111]">Chopping Boat</h5>
+            <p class="font-normal text-[#11111180] text-xl">25.00 $</p>
+            <button
+              id="cartBtn"
+              type="button"
+              class="text-white bg-gradient-to-r from-pink-500 to-pink-600 hover:shadow-lg hover:shadow-pink-500/50 hover:bg-gradient-to-br focus:outline-none font-medium rounded-lg text-base px-4 py-2 text-center"
+            >
+              Add To Cart
+            </button>
+          </div>
+          <!-- Kitchenware Card 3 -->
+          <div
+            class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 text-center space-y-2"
+          >
+            <div
+              class="bg-gray-400 px-6 py-4 rounded-lg max-w-80 max-h-48 flex justify-center"
+            >
+              <img
+                class="object-cover"
+                src="./images/kitchenware/presurekukar.png"
+                alt=""
+              />
+            </div>
+            <h5 class="text-xl font-semibold text-[#111111]">Home Cooker</h5>
+            <p class="font-normal text-[#11111180] text-xl">49.00 $</p>
+            <button
+              id="cartBtn"
+              type="button"
+              class="text-white bg-gradient-to-r from-pink-500 to-pink-600 hover:shadow-lg hover:shadow-pink-500/50 hover:bg-gradient-to-br focus:outline-none font-medium rounded-lg text-base px-4 py-2 text-center"
+            >
+              Add To Cart
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Cart Section  -->
+      <div></div>
+    </main>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
-    <script src="./script.js"></script>
+    <script src="./script/app.js"></script>
+    <script src="./script/utility.js"></script>
   </body>
 </html>
