@@ -296,21 +296,27 @@
             <sup id="cartTotal" class="text-pink-600">0</sup>
           </h2>
           <h3 class="text-[#111111] text-xl font-medium">Have The Coupon?</h3>
-          <input
-            id="iCoupon"
-            type="text"
-            placeholder="Coupon code"
-            class="border-none px-4 py-2 text-pink-500 bg-gray-200 rounded-l-lg placeholder-[#11111166]"
-          /><button
-            id="couponBtn"
-            type="button"
-            class="text-white bg-gradient-to-r from-pink-500 to-pink-600 hover:shadow-lg hover:shadow-pink-500/50 hover:bg-gradient-to-br focus:outline-none font-medium rounded-r-lg text-base px-4 py-2 text-center"
-          >
-            Apply
-          </button>
+          <div class="flex justify-center">
+            <input
+              id="iCoupon"
+              type="text"
+              placeholder="Coupon code"
+              class="border-none px-4 py-2 text-pink-500 bg-gray-200 rounded-l-lg placeholder-[#11111166]"
+            /><button
+              id="couponBtn"
+              type="button"
+              class="text-white bg-gradient-to-r from-pink-500 to-pink-600 hover:shadow-lg hover:shadow-pink-500/50 hover:bg-gradient-to-br focus:outline-none font-medium rounded-r-lg text-base px-4 py-2 text-center cursor-not-allowed"
+              disabled
+            >
+              Apply
+            </button>
+          </div>
         </div>
         <div class="bg-white p-6 rounded-lg">
-          <ul class="text-2xl font-medium text-[#111111]"></ul>
+          <ul
+            id="theList"
+            class="text-xl font-medium text-[#111111] overflow-auto max-h-96"
+          ></ul>
           <hr class="my-5" />
           <ul class="text-2xl font-medium text-[#111111]">
             <li>
@@ -321,13 +327,15 @@
             </li>
             <li class="border-b-2 pb-1">
               Discount:
-              <span id="totalPrice" class="text-[#11111180] font-normal text-xl"
+              <span
+                id="discountPrice"
+                class="text-[#11111180] font-normal text-xl"
                 >0.00 $</span
               >
             </li>
             <li>
               Total:
-              <span id="totalPrice" class="text-[#11111180] font-normal text-xl"
+              <span id="total" class="text-[#11111180] font-normal text-xl"
                 >0.00 $</span
               >
             </li>
